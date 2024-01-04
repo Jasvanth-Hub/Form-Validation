@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    padding-top: 50px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(14, 195, 201);
+}
+
+.box {
+    width: 400px;
+    height: 590px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 3px 2px 10px 3px black;
+}
+
+.heading {
+    color: black;
+    padding: 15px;
+    background-color: whitesmoke;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.area {
+    margin-bottom: 35px;
+    font-size: 17px;
+
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agree {
+    margin-bottom: 30px;
+}
+
+.sub {
+    background-color: rgb(116, 116, 242);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 35px;
+    padding-top: 3px;
+}
+
+label {
+    display: block;
+}
+
+#l1 {
+    display: inline;
+}
+
+#text {
+    height: 25px;
+    width: 300px;
+}
+
+#email {
+    height: 25px;
+    width: 300px;
+}
+
+#password {
+    height: 25px;
+    width: 300px;
+}
+
+#password1 {
+    height: 25px;
+    width: 300px;
+}
+
+.area span {
+    position: absolute;
+    visibility: hidden;
+}
+
+small {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+}
+.area.success input{
+    border-color: rgb(106, 243, 106);
+}
+.area.error input{
+    border-color: rgb(238, 60, 60);
+}
+.area.success span.success{
+    color: rgb(60, 241, 60);
+    visibility: visible;
+}
+.area.error span.error{
+    color: rgb(235, 68, 68);
+    visibility: visible;
+}
+.area.success span.error{
+    visibility: none;
+}
+.area.error span.success{
+    visibility: none;
+}
+.area.error small{
+    visibility: visible;
+    color: red;
+}
+.agree.error small{
+    visibility: visible;
+    color: red;
+}
